@@ -17,7 +17,7 @@ import { useRouter } from 'next/router';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import 'animate.css';
 
-const MenuChildren = dynamic(() => import('@common_headerdesktop/components/v1/mcategoryChildren'), { ssr: false });
+const MenuChildren = dynamic(() => import('@common_headerdesktop/components/v3/mcategoryChildren'), { ssr: false });
 
 const Menu = (props) => {
     const { data, storeConfig } = props;
@@ -186,7 +186,6 @@ const Menu = (props) => {
                                     </div>
                                 ) : null}
                             </li>
-                            
                         );
                     }
                     return null;
