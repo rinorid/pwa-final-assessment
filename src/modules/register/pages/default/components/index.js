@@ -37,7 +37,7 @@ const RegisterView = ({
     return (
         <>
             <Typography variant="h1" align="center">
-                {'Create An Account'}
+                {t('register:pageHeading')}
             </Typography>
             <form className={classNames('col-md-6 col-md-offset-3', styles.container)} onSubmit={formik.handleSubmit}>
                 <TextField
